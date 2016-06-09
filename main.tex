@@ -1,0 +1,23 @@
+
+\documentclass[twoside, hidelinks]{article}
+
+\input{./texfiles/preamble.tex}
+\input{./texfiles/title.tex}
+
+\begin{document}
+
+\maketitle % Insert title
+\thispagestyle{fancy} % All pages have headers and footers
+
+\input{./sections/000-resumo.tex}
+\input{./sections/001-abstract.tex}
+
+\begin{multicols*}{2} % Two-column layout throughout the main article text
+\newpage
+
+\input{./sections/010-introduction.tex}
+
+\printbibliography
+
+\end{multicols*}
+\end{document}
