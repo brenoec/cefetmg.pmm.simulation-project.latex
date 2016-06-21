@@ -1,13 +1,4 @@
 
-## Modelo com Desativação
-
-  Adicionar relação decaimento de elementos com o tempo
-
-## Metodologia
-
-## Abstract
-Keywords
-
 ## Análise dos Resultados
 
 Melhorias diversas:

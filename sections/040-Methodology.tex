@@ -1,2 +1,45 @@
 
 \section{Metodologia}
+
+\lettrine{P}{ara} a execução da simulação, um primeiro passo é definir aspéctos do ambiente
+simulacional.
+
+A implementação da rede unidimensional do se sistema se dá por um arranjo, onde
+cada posição do arranjo pode: conter um sítio inativo desocupado; conter um
+sítio inativo ocupado por um reagente; conter um sítio ativo.
+
+Três listas encadeadas são utilizadas como estruturas auxiliares para
+distribuir uniformemente os sítios ativos e os reagentes na rede. Um sítio
+aleatóriamente escolhido é removido de uma primeira lista auxiliar, de forma a
+garantir que um sítio não seja escolhido duas vezes, enquanto uma segunda lista
+auxiliar mantém referência para todos os sítios da rede. Uma terceira lista
+armazena a sequência de posições dos sítios aleatóriamente escolhidos para
+reagentes, com finalidade de facilitar a simulação do processo de difusão. A
+lista encadeada auxiliar que mantém referência de todos os sítios da rede é
+mapeada em um arranjo linear após distribuição aleatória de sítios catalíticos e
+reagentes.
+
+São parâmetros de simulação: número de execuções independentes de cada dinâmica
+$M$; duração da dinâmica $Z$, em termos do número de tentativas de se executar
+um passo, onde cada reagente do sistema tenta executar $Z$ passos; o tamanho da
+rede $N$, correspondente ao número de sítios contidos por ela; e coeficiente de
+difusão $\mathcal{D}$, correspondente ao número de tentativas de se executar um
+passo do tamanho da unidade da rede, por unidade de tempo, por reagente.
+
+O gerador de números pseudo-aleatórios utilizado nas simulações é o algoritmo
+\texttt{Ranq1}\cite{8}. Cada número pseudo-aleatório gerado depende do número
+gerado anteriormente, sendo que o primeiro elemento depende do valor fornecido
+como semente ao algoritmo. Essa característica é determinante para que todas as
+$M$ execuções independentes aconteçam sequencialmente, sem que um i-ésimo valor
+pseudo-aleatório gerado seja considerado mais de uma vez ou desconsiderado.
+
+A difusão de reagentes respeita o princípio de volume excluído, de forma que se
+determinado reagente tenta executar passo com destino a um sítio previamente
+ocupado, tal tentativa é rejeitada e o reagente não se desloca nessa iteração.
+Os resultados da simulação são: o número de passos executados por cada reagente
+e a dupla composta pela contagem de reagentes e pela contagem de sítios
+catalíticos, por iteração da rede e por execução independente, correspondentes a
+um total de $M \times Z$ duplas.
+
+Os valores dos parâmetros utilizados na simulação foram: $N = 2^{20}$,
+$\mathcal{D} = 1$, $Z = 10^8$.
