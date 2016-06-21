@@ -51,6 +51,22 @@ os reagentes ficam confinados entre dois sítios catalíticos; enquanto a equaç
 \textit{poisoning}), pois existe desativação de sítio catalíticos. O modelo está
 representado graficamente na figura \ref{Figure-031-EsquemaModelo}.
 
+{
+  \centering
+  \captionsetup{type=figure}
+	\includegraphics[width=\columnwidth]{./figures/031-EsquemaModelo.png}
+  \captionof{figure}{Representação esquemática da dinâmica do modelo.
+    Os sítios catalíticos (armadilhas) estão representados por quadrados pretos,
+    enquanto sítios inativos, por quadrados brancos. Os círculos representam
+    reagentes que difundem pela rede. Quando um reagente se desloca para uma
+    armadilha, deixa o sistema instantaneamente. Quando este evento ocorre, com
+    probabilidade \textit{p}, o sítio perde sua atividade catalítica e passa a
+    ser um sítio inativo (\ref{Equation-032-ModeloEnvenenamento}). Com probabilidade 1 -
+    \textit{p}, o sítio matém sua condição de sítio catalítico
+    (\ref{Equation-031-ModeloTradicional}) \cite{3}.\hfill \break}
+	\label{Figure-031-EsquemaModelo}
+}
+
 Da forma como foi concebido, é natural concluir que existirão duas fases
 distintas para tempos longos: uma em que o número de reagentes decai até zero
 (que ocorre com baixa probabilidade de desativação e baixa concentração de
@@ -71,20 +87,6 @@ entre essas duas fases,
 }
 
 \noindent onde sítios catalíticos desempenham papel da segunda espécie reativa
-\textit{B}.
-
-{
-  \centering
-  \captionsetup{type=figure}
-	\includegraphics[width=\columnwidth]{./figures/031-EsquemaModelo.png}
-  \captionof{figure}{Representação esquemática da dinâmica do modelo.
-    Os sítios catalíticos (armadilhas) estão representados por quadrados pretos,
-    enquanto sítios inativos, por quadrados brancos. Os círculos representam
-    reagentes que difundem pela rede. Quando um reagente se desloca para uma
-    armadilha, deixa o sistema instantaneamente. Quando este evento ocorre, com
-    probabilidade \textit{p}, o sítio perde sua atividade catalítica e passa a
-    ser um sítio inativo (\ref{Equation-032-ModeloEnvenenamento}). Com probabilidade 1 -
-    \textit{p}, o sítio matém sua condição de sítio catalítico
-    (\ref{Equation-031-ModeloTradicional}) \cite{3}.}
-	\label{Figure-031-EsquemaModelo}
-}
+\textit{B}. É igualmente natural pensar que $(\sigma_{t+\delta t},
+\theta_{t+\delta t}) \leq (\sigma_t, \theta_t)$, uma vez que não há recuperação
+de sítios inativos e não há fluxo incidente de reagentes.
