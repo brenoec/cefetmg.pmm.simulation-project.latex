@@ -23,6 +23,10 @@ Keywords
 
 ## Normalizar labels
 
+## Colocar variáveis em itálico
+
+## Citar fontes repetidas menos vezes 
+
 ## Fazer conclusão
 
 Revisar:
