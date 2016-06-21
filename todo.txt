@@ -5,12 +5,7 @@
 
 ## Metodologia
 
-## Resumo
-Fazer resumo
-palavras-chave
-
 ## Abstract
-Fazer abstract
 Keywords
 
 ## Análise dos Resultados
@@ -21,17 +16,11 @@ Melhorias diversas:
 
   011, 012, 051 e 054
 
-## Corrigir citações
-
-## Normalizar altura de equações
-
-## Normalizar labels
+## Melhorar nomes das figuras "resultado"
 
 ## Colocar variáveis em itálico
 
 ## Citar fontes repetidas menos vezes
-
-## Melhorar nomes das figuras "resultado"
 
 Revisar:
 
@@ -40,3 +29,11 @@ Revisar:
 ## Modelo de Smoluchowski
 
 ## Resultados
+
+Feito:
+
+## Corrigir citações
+
+## Normalizar altura de equações
+
+## Normalizar labels
