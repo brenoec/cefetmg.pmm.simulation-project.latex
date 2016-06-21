@@ -1,0 +1,70 @@
+
+\section{Modelo de Smoluchowski}
+
+Smoluchowski propôs uma modelagem do processo de armadilhamento a partir de uma
+armadilha ou catalisador esférico de raio r, no qual as partículas reagem e saem
+do sistema instantaneamente ao tocar a borda dessa esfera. Inicialmente, as
+partículas estão distribuídas com concentração uniforme $\rho_0$ de partículas
+ao redor da esfera \cite{3}. A variação da concentração dos reagentes em um
+ponto x fora da esfera ao longo do tempo t, $\rho(x,t)$, é dada pela equação
+ \cite{3}:
+
+\begin{equation}
+  \frac{\partial}{\partial t}\rho(x,t) = D\nabla^2\rho(x,t), x>r,
+\end{equation}
+
+\noindent sendo D o coeficiente de difusão dos reagentes. E já que os reagentes
+que tocam a borda da esfera saem do sistema instantaneamente, a densidade de
+partículas nessa região é 0, ou seja: \cite{3}
+
+\begin{equation}
+\rho(x,t)|_{x=r} = 0.
+\end{equation}
+
+Tornando o problema discreto, pode-se considerar o sistema como uma rede de
+sítios em que cada um desses sítios pode estar vazio, ocupado por um reagente
+ou por um catalisador \cite{3}.  Dessa forma, definindo c como a concentração de
+armadilhas na rede e S(t) o número de sítios ocupados por um reagente até o
+tempo t, a probabilidade de sobrevivência Ps de sobrevivência de uma partícula
+no instante t é: \cite{6}
+
+\begin{equation}
+P_s(t) = \left<(1-c)^{S(t)}\right>
+\label{probabilidade}
+\end{equation}
+
+Segundo \cite{3}, a equação \ref{probabilidade} é difícil de ser solucionada
+analiticamente. Mas caso fosse solucionada, a densidade dos reagentes no tempo
+t poderia ser obtida da seguinte forma:
+
+\begin{equation}
+\rho(t) = \rho_0P_s(t)
+\end{equation}
+
+Para tempos curtos, pode-se utilizar a seguinte aproximação para a equação
+\ref{probabilidade}:
+
+\begin{equation}
+P_s(t) \approx (1-c)^{\left<S(t)\right>}
+\end{equation}
+
+Para definir essa concentração em tempos longos, é feito uma outra simplificação
+no modelo, tornando-o unidimensional. Dessa forma, existe um espaço L entre duas
+armadilhas consecutivas no qual os reagentes podem circular livremente sem que
+um sítio ocupe mais de um reagente. Para cada um desses espaços, sabe-se que a
+concentração de reagentes nos sítios ocupados por armadilhas (0 e L) são sempre
+0. Em um sítio intermediário x, a concentração inicial de reagente é $\rho_0$ e,
+ao longo do tempo, essa concentração diminui com a seguinte taxa \cite{3}:
+
+\begin{equation}
+\frac{\partial \rho}{\partial t} = D\frac{\partial^2 \rho}{\partial x^2}.
+\label{tempolongo}
+\end{equation}
+
+\cite{3} mostrou que a equação \ref{tempolongo} possui uma solução analítica
+aproximada, como segue:
+
+\begin{equation}
+\rho(t) \approx exp\left[ -\frac{3}{2} (2\pi^2c^2Dt)^{1/3} \right].
+\label{decaimento}
+\end{equation}

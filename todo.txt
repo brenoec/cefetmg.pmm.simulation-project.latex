@@ -1,0 +1,32 @@
+
+## Modelo com Desativação
+
+  Adicionar relação decaimento de elementos com o tempo
+
+## Metodologia
+
+## Resumo
+Fazer resumo
+palavras-chave
+
+## Abstract
+Fazer abstract
+Keywords
+
+## Melhorar legibilidade das figuras
+
+  011, 012, 051 e 054
+
+## Corrigir citações
+
+## Normalizar altura de equações
+
+## Fazer conclusão
+
+Revisar:
+
+## Introdução
+
+## Modelo de Smoluchowski
+
+## Resultados
