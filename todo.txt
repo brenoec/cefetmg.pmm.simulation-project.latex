@@ -13,6 +13,10 @@ palavras-chave
 Fazer abstract
 Keywords
 
+## Análise dos Resultados
+
+Melhorias diversas:
+
 ## Melhorar legibilidade das figuras
 
   011, 012, 051 e 054
@@ -25,9 +29,9 @@ Keywords
 
 ## Colocar variáveis em itálico
 
-## Citar fontes repetidas menos vezes 
+## Citar fontes repetidas menos vezes
 
-## Fazer conclusão
+## Melhorar nomes das figuras "resultado"
 
 Revisar:
 
