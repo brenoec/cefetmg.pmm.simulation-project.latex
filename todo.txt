@@ -21,6 +21,8 @@ Keywords
 
 ## Normalizar altura de equações
 
+## Normalizar labels
+
 ## Fazer conclusão
 
 Revisar:
