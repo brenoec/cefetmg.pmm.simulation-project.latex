@@ -1,7 +1,7 @@
 
 \section{Metodologia}
 
-\lettrine{P}{ara} a execução da simulação, um primeiro passo é definir aspéctos do ambiente
+Para a execução da simulação, um primeiro passo é definir aspectos do ambiente
 simulacional.
 
 A implementação da rede unidimensional do se sistema se dá por um arranjo, onde
@@ -10,7 +10,7 @@ sítio inativo ocupado por um reagente; conter um sítio ativo.
 
 Três listas encadeadas são utilizadas como estruturas auxiliares para
 distribuir uniformemente os sítios ativos e os reagentes na rede. Um sítio
-aleatóriamente escolhido é removido de uma primeira lista auxiliar, de forma a
+aleatoriamente escolhido é removido de uma primeira lista auxiliar, de forma a
 garantir que um sítio não seja escolhido duas vezes, enquanto uma segunda lista
 auxiliar mantém referência para todos os sítios da rede. Uma terceira lista
 armazena a sequência de posições dos sítios aleatóriamente escolhidos para
@@ -27,7 +27,7 @@ difusão $\mathcal{D}$, correspondente ao número de tentativas de se executar u
 passo do tamanho da unidade da rede, por unidade de tempo, por reagente.
 
 O gerador de números pseudo-aleatórios utilizado nas simulações é o algoritmo
-\texttt{Ranq1}\cite{8}. Cada número pseudo-aleatório gerado depende do número
+\texttt{Ranq1} \cite{8}. Cada número pseudo-aleatório gerado depende do número
 gerado anteriormente, sendo que o primeiro elemento depende do valor fornecido
 como semente ao algoritmo. Essa característica é determinante para que todas as
 $M$ execuções independentes aconteçam sequencialmente, sem que um i-ésimo valor

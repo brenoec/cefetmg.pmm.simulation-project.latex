@@ -1,14 +1,12 @@
 
 \section{Resultados}
 
-\footnote{Obs: todos os gráficos utilizados nessa seção foram obtidos em \cite{3} porque nossa simulação ainda não foi finalizada.}
-
-\lettrine{P}{rimeiramente}, foram realizadas simulações para o caso em que a probabilidade p
+Primeiramente, foram realizadas simulações para o caso em que a probabilidade $p$
 de envenenamento é muito baixa. No caso extremo, essa probabilidade é 0 e o
 sistema se comporta de acordo com a equação \ref{Equation-027-Decaimento}, para
 sistemas sem envenenamento. Mas como mostrado pela figura
-\ref{Figure-052-Resultado}, essa equação descreve bem sistemas com p pequenos.
-Nesses sistemas, em que $\sigma_0 >> p*\theta_0$, é possível perceber pela
+\ref{Figure-052-Resultado}, essa equação descreve bem sistemas com $p$ pequenos.
+Nesses sistemas, em que $\sigma_0 >> p \theta_0$, é possível perceber pela
 figura que a quantidade de reagentes decaem em uma lei de potência e tendem a
 acabar com o passar do tempo. Esse comportamento é esperado já que o
 envenenamento ocorre com pouca frequência no sistema com esse tipo de regime,
@@ -25,7 +23,7 @@ sistema tende a perder poucos catalisadores e perder todos os reagentes.
 }
 
 Posteriormente, foram realizadas simulações para o caso em que o sistema possui
-probabilidade de envenenamento p alta e concentração inicial de reagentes
+probabilidade de envenenamento $p$ alta e concentração inicial de reagentes
 $\theta_0$ também alta ao passo que a concentração inicial de catalisadores
 $\sigma_0$ se manteve constante. Sistemas com esse regime apresentam um
 decaimento de reagentes muito grande no início, já que a concentração deles
@@ -46,12 +44,16 @@ os reagentes restantes permanecem no sistema.
 }
 
 Também foram simulados sistemas de reação-difusão com envenenamento na
-criticalidade, ou seja, sistemas nos quais $\sigma_0 = p*\theta_0$. Como
+criticalidade, ou seja, sistemas nos quais $\sigma_0 = p \theta_0$. Como
 esperado, percebe-se na figura \ref{Figure-051-Resultado} um decaimento em lei
 de potência do número de reagentes no tempo para esses sistemas e, além disso,
 as curvas em uma escala log-log apresentam uma reta com inclinação de,
-aproximadamente, $-1/4$, como prevê a equação
-$\theta \sim \frac{\theta_0}{\sigma_0^{1/2}(Dt)^(1/4)}$\cite{3}.
+aproximadamente, $-1/4$, como prevê equação \ref{Equation-051-Eq} \cite{3}.
+
+\begin{equation}
+	\theta \sim \dfrac{\theta_0}{\sigma_0^{1/2}(Dt)^(1/4)}.
+	\label{Equation-051-Eq}
+\end{equation}
 
 { \centering
 	\captionsetup{type=figure}
@@ -65,7 +67,7 @@ $\theta \sim \frac{\theta_0}{\sigma_0^{1/2}(Dt)^(1/4)}$\cite{3}.
 As simulações já apresentadas descrevem sistemas com envenenamento longe da
 criticalidade e exatamente na criticalidade. As últimas simulações descrevem
 sistemas próximos da criticalidade, com regimes em que os reagentes tendem a
-acabar ($\sigma_0 > p*\theta_0$). A figura \ref{Figure-054-Resultado} descreve
+acabar ($\sigma_0 > p \theta_0$). A figura \ref{Figure-054-Resultado} descreve
 esses sistemas próximos da criticalidade e, como pode-se perceber, no início os
 reagentes decaem de acordo com a lei de potência prevista para sistemas na
 criticalidade (o início dos sistemas no primeiro gráfico apresenta comportamento

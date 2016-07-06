@@ -1,27 +1,27 @@
 
 \section{Modelo de Smoluchowski}
 
-\lettrine{S}{moluchowski} propôs uma modelagem do processo de armadilhamento a partir de uma
-armadilha ou catalisador esférico de raio r, no qual as partículas reagem e saem
+Smoluchowski propôs uma modelagem do processo de armadilhamento a partir de uma
+armadilha ou catalisador esférico de raio $r$, no qual as partículas reagem e saem
 do sistema instantaneamente ao tocar a borda dessa esfera. Inicialmente, as
 partículas estão distribuídas com concentração uniforme $\rho_0$ de partículas
-ao redor da esfera\cite{3}. A variação da concentração dos reagentes em um
-ponto x fora da esfera ao longo do tempo t, $\rho(x,t)$, é dada pela
-equação\cite{3}:
+ao redor da esfera \cite{3}. A variação da concentração dos reagentes em um
+ponto $x$ fora da esfera ao longo do tempo $t$, $\rho(x,t)$, é dada pela
+equação \cite{3}:
 
 {
 \setlength{\belowdisplayskip}{0pt} \setlength{\belowdisplayshortskip}{0pt}
 \setlength{\abovedisplayskip}{0pt} \setlength{\abovedisplayshortskip}{0pt}
 
 \begin{equation}
-  \frac{\partial}{\partial t}\rho(x,t) = D\nabla^2\rho(x,t), x>r,
+  \dfrac{\partial}{\partial t}\rho(x,t) = \mathcal{D}\nabla^2\rho(x,t), x>r,
   \label{Equation-021}
 \end{equation}
 }
 
-\noindent sendo D o coeficiente de difusão dos reagentes. E já que os reagentes
-que tocam a borda da esfera saem do sistema instantaneamente, a densidade de
-partículas nessa região é 0, ou seja\cite{3}:
+\noindent sendo $\mathcal{D}$ o coeficiente de difusão dos reagentes. E já que os
+reagentes que tocam a borda da esfera saem do sistema instantaneamente, a
+densidade de partículas nessa região é 0, ou seja \cite{3}:
 
 {
 \setlength{\belowdisplayskip}{0pt} \setlength{\belowdisplayshortskip}{0pt}
@@ -35,10 +35,10 @@ partículas nessa região é 0, ou seja\cite{3}:
 
 Tornando o problema discreto, pode-se considerar o sistema como uma rede de
 sítios em que cada um desses sítios pode estar vazio, ocupado por um reagente
-ou por um catalisador\cite{3}.  Dessa forma, definindo c como a concentração de
-armadilhas na rede e S(t) o número de sítios ocupados por um reagente até o
-tempo t, a probabilidade de sobrevivência Ps de sobrevivência de uma partícula
-no instante t é\cite{6}:
+ou por um catalisador \cite{3}.  Dessa forma, definindo $c$ como a concentração de
+armadilhas na rede e $S(t)$ o número de sítios distintos visitados por um reagente
+até o tempo $t$, a probabilidade de sobrevivência $P_s$ de sobrevivência de uma
+partícula no instante $t$ é \cite{6}:
 
 {
 \setlength{\belowdisplayskip}{0pt} \setlength{\belowdisplayshortskip}{0pt}
@@ -51,8 +51,8 @@ no instante t é\cite{6}:
 }
 
 A equação \ref{Equation-023-Probabilidade} é difícil de ser solucionada
-analiticamente\cite{3}. Mas caso fosse solucionada, a densidade dos reagentes no
-tempo t poderia ser obtida da seguinte forma:
+analiticamente \cite{3}. Mas caso fosse solucionada, a densidade dos reagentes no
+tempo $t$ poderia ser obtida da seguinte forma:
 
 {
 \setlength{\belowdisplayskip}{0pt} \setlength{\belowdisplayshortskip}{0pt}
@@ -78,32 +78,32 @@ Para tempos curtos, pode-se utilizar a seguinte aproximação para a equação
 }
 
 Para definir essa concentração em tempos longos, é feito uma outra simplificação
-no modelo, tornando-o unidimensional. Dessa forma, existe um espaço L entre duas
+no modelo, tornando-o unidimensional. Dessa forma, existe um espaço $L$ entre duas
 armadilhas consecutivas no qual os reagentes podem circular livremente sem que
 um sítio ocupe mais de um reagente. Para cada um desses espaços, sabe-se que a
-concentração de reagentes nos sítios ocupados por armadilhas (0 e L) são sempre
-0. Em um sítio intermediário x, a concentração inicial de reagente é $\rho_0$ e,
-ao longo do tempo, essa concentração diminui com a seguinte taxa\cite{3}:
+concentração de reagentes nos sítios ocupados por armadilhas (0 e $L$) são sempre
+0. Em um sítio intermediário $x$, a concentração inicial de reagente é $\rho_0$ e,
+ao longo do tempo, essa concentração diminui com a seguinte taxa \cite{3}:
 
 {
 \setlength{\belowdisplayskip}{0pt} \setlength{\belowdisplayshortskip}{0pt}
 \setlength{\abovedisplayskip}{0pt} \setlength{\abovedisplayshortskip}{0pt}
 
 \begin{equation}
-  \frac{\partial \rho}{\partial t} = D\frac{\partial^2 \rho}{\partial x^2}
+  \dfrac{\partial \rho}{\partial t} = \mathcal{D}\dfrac{\partial^2 \rho}{\partial x^2}
   \label{Equation-026-TempoLongo}
 \end{equation}
 }
 
 A equação \ref{Equation-026-TempoLongo} possui uma solução analítica aproximada,
-como segue\cite{3}:
+como segue \cite{3}:
 
 {
 \setlength{\belowdisplayskip}{0pt} \setlength{\belowdisplayshortskip}{0pt}
 \setlength{\abovedisplayskip}{0pt} \setlength{\abovedisplayshortskip}{0pt}
 
 \begin{equation}
-  \rho(t) \approx exp\left[ -\frac{3}{2} (2\pi^2c^2Dt)^{1/3} \right]
+  \rho(t) \approx exp\left[ -\dfrac{3}{2} (2\pi^2c^2\mathcal{D}t)^{1/3} \right]
   \label{Equation-027-Decaimento}
 \end{equation}
 }

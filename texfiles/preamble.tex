@@ -1,15 +1,18 @@
 
 \usepackage[backend=biber,sorting=none]{biblatex}
+\renewbibmacro{in:}{}
 \setlength\bibitemsep{1.5\itemsep}
 \addbibresource{refbase.bib}
 
 \usepackage{lipsum} % Package to generate dummy text throughout this template
 
+\usepackage{csquotes}
+\usepackage[brazil]{babel}
 \usepackage[sc]{mathpazo} % Use the Palatino font
 \usepackage[fleqn]{amsmath}
 \usepackage{lmodern}
 \usepackage{pifont}
-\usepackage[utf8]{inputenc} % Use 8-bit encoding that has 256 glyphs
+%\usepackage[utf8]{inputenc} % Use 8-bit encoding that has 256 glyphs
 \linespread{1.05} % Line spacing - Palatino needs more space between lines
 \usepackage{microtype} % Slightly tweak font spacing for aesthetics
 
@@ -22,6 +25,12 @@
 \usepackage{graphicx}
 
 \usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{GoudyIn}
+\usepackage[x11names]{xcolor}
+\renewcommand{\LettrineFontHook}{\GoudyInfamily{}}
+\LettrineTextFont{\itshape}
+\setcounter{DefaultLines}{3}
+
 \usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
 
 \usepackage{abstract} % Allows abstract customization
@@ -33,8 +42,6 @@
 \renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
 \titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
 \titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
-
-\usepackage{lipsum}
 
 \usepackage{fancyhdr} % Headers and footers
 \pagestyle{fancy} % All pages have headers and footers
